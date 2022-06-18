@@ -1,35 +1,53 @@
-<div class="container mt-5">
-  <!-- search bar -->
-  <div class="row" id="search-bar">
-    <div class="col-12">
-      <form action="/search">
-        <div class="input-group mb-3">
-          <input type="text" name="keyword" class="form-control" placeholder="Enter movie name to search..."
-            aria-label="Movie Name..." aria-describedby="search-button" value={{keyword}}>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="submit" id="search-button">Search</button>
-          </div>
-        </div>
-      </form>
+<div class="container carousel d-flex flex-column justify-content-center">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.redd.it/53y8yu6es1n81.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b7b75668607915.5b62c99965c54.png"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://assetsv4.tripmoment.com/uploads/article/bannerhead/000/018/168/a3612471-9aeb-43e7-9735-62e09680b941.jpg"
+          class="d-block w-100" alt="...">
+      </div>
     </div>
   </div>
-  <!-- movie list -->
+</div>
+
+<div class="container mt-5">
+  <div class="row" id="search-bar">
+  <div class="col-12">
+    <form action="/search">
+      <div class="input-group mb-3">
+        <input type="text" name="keyword" class="form-control" placeholder="Enter movie name to search..."
+          aria-label="Movie Name..." aria-describedby="search-button" value={{keyword}}>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit" id="search-button">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  <!-- restaurant list -->
   <div class="row" id="data-panel">
     {{#each restaurants}}
-    <div class="col-sm-4">
+    <div class="col-sm-4" data-id={{this.id}} data-target={{this.tag}}>
       <a href="/restaurants/{{this.id}}" class="text-secondary">
         <div class="card mb-2">
           <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
 
-          <div class="card-body movie-item-body">
-            <div class="d-flex justify-content-evenly">
-              <h6 class="card-title">{{this.name}}</h6>
+          <div class="card-body res-item-body">
+            <div class="card-info">
               <div class={{this.tag}}>
-                <div class="stars-outer">
+                <div class="card-title">{{this.name}}</div>
+                <div class="stars-outer" id="star">
                   <div class="stars-inner"></div>
                 </div>
-                <span class="number-rating">{{this.rating}}</span>
               </div>
+              <div class="number-rating">{{this.rating}}</div>
             </div>
           </div>
         </div>
