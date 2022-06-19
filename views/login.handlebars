@@ -1,0 +1,62 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Food Hunter</title>
+</head>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="">
+            <h1 style="padding-top: 15px"> Create Account</h1>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="lname" placeholder="Last Name">
+            <input type="text" name="address" placeholder="Address">
+            <input type="password" name="password" placeholder="Password">
+            <input type="text" name="phone" placeholder="Phone Number">
+            <input type="number" name="age" placeholder="Age">
+            <button style="margin-top:10px"> Create Account</button>
+            <h5>Already have an account! <a class="ghost" id="signIn" style="color:blue;"><u>Sign In</u></a></h5>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1 style="padding-bottom: 15px"> Login Now</h1>
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <a href="#" style="padding-left:150px; font-weight: bold"> Forgot Your Password?</a>
+            <button class="loginbutton" style="margin-top: 10px"> Let Me In...</button>
+            <h5>New to here! <a class="ghost" id="signUp" style="color:blue;"><u>Sign Up</u></a></h5>
+        </form>
+        
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <img src="https://img.freepik.com/free-vector/man-delivering-food-while-wearing-medical-mask_52683-39764.jpg?w=1380&t=st=1655657839~exp=1655658439~hmac=b6745256151cf300b31d3fd3062fc542e9700fc82ae16ebc7310975acc584f01" alt="movie-1" height="480" width="500"/>
+                
+            </div>
+            <div class="overlay-panel overlay-right">
+                <img src="https://img.freepik.com/free-vector/eating-donuts-concept-illustration_114360-5243.jpg?t=st=1655657786~exp=1655658386~hmac=f5009bac72398e1b6ad3b6e00c566bcb731e9ea994a1bc58a6801c2bef8c0be0&w=900" alt="movie-2" height="480" width="500"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+});
+signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+});
+</script>
+
+</body>

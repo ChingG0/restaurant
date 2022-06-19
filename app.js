@@ -32,6 +32,10 @@ app.get("/:restaurant_category",(req,res)=>{
     res.render('index', { restaurants: restaurants})
 })
 
+app.get("/login/user",(req,res)=>{
+    res.render('login', {restaurants: restaurantlist.results})
+})
+
 app.listen(port, ()=>{
     console.log(`Express is listening on localhost: ${port}`);
 })

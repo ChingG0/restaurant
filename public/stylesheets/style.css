@@ -1,3 +1,59 @@
+/*  navbar  */
+.navbar-collapse {
+    max-width: 1320px;
+    height:60px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+/*  carousel    */
+.carousel{
+    width:100%;
+    height:600px;
+}
+
+.carousel-inner {
+    width: 1300px;
+    height: 800px;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+ /* searchbar  
+#search-bar {
+    position:absolute;
+    width: 800px;
+    background-color: #fce2cf;
+    border-radius: 8px;
+    padding: 20px 30px;
+    border: 0;
+    background-color: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.form-control{
+    width:600px;
+}
+.col-lg-12 form{
+    margin: 0px auto;
+}
+.hotsearch{
+    margin-top: 10px;
+}
+
+.hotsearch a{
+    text-decoration: none;
+    color:#474747;
+} */
+
+.search{
+    margin: 0px auto;
+    width:600px;
+}
+
+/*  rating  */
 .stars-outer {
     position: relative;
     display: inline-block;
@@ -27,6 +83,17 @@
     color: #f8ce0b;
 }
 
+.number-rating {
+    margin-left: 20px;
+    background-color: #e8714d;
+    color: #f9f9f9;
+    width: 45px;
+    height: 25px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/*  card */
 .card-info {
     display: flex;
     justify-content: center;
@@ -46,48 +113,8 @@
     margin-right: 20px;
 }
 
-.number-rating {
-    margin-left: 20px;
-    background-color: #e8714d;
-    color: #f9f9f9;
-    width: 45px;
-    height: 25px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-.navbar-collapse {
-    max-width: 1320px;
-}
-
-.nav-item {
-    margin-right: 20px;
-}
-
-.container .carousel {
-    height: 600px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 600px;
-}
-
-#search-bar {
-    margin: 0 auto;
-    max-width: 680px;
-    background-color: #fce2cf;
-    border-radius: 8px;
-    padding: 20px 30px;
-    border: 0;
-    margin-top: -40px;
-    margin-bottom: 10px;
-    ;
-    background-color: cover;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.row-lg-6 .map{
+/*  show page */
+.row-lg-6 .map {
     width: 600px;
     height: 600px;
     margin-top: 10px;
@@ -99,7 +126,7 @@
     border-radius: 10px;
     margin-top: 30px;
     width: 450px;
-    height:250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,10 +138,11 @@
     height: 50px;
 }
 
-.ampm{
+.ampm {
     width: 80px;
 }
-.find-a-table button{
+
+.find-a-table button {
     border: 0px;
     display: flex;
     width: 400px;
@@ -125,7 +153,8 @@
     color: #f9f9f9;
     border-radius: 10px;
 }
-.find-a-table button:hover{
+
+.find-a-table button:hover {
     border: 0px;
     display: flex;
     width: 400px;
