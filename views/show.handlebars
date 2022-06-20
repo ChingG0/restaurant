@@ -10,6 +10,7 @@
         <li><strong>restaurant location: </strong>{{restaurant.location}}</li>
         <li><strong>phone: </strong>{{ restaurant.phone}}</li>
         <li> <strong>google map: <a href="{{ restaurant.google_map}}">{{ restaurant.name_en}}</a></li>
+        <li><strong>餐廳類別: {{ restaurant.category}}</strong></li>
       </ul>
       </p> {{restaurant.description}}</p>
     </div>
@@ -20,7 +21,7 @@
   </div>
 </div>
 <div class="container d-flex justify-content-around">
-    <div class="reservation row-lg-6">
+  <form action="" class="reservation row-lg-6">
     <div class="reservation-title">
       <h2>Make a Reservation</h2>
     </div>
@@ -83,6 +84,5 @@
     <div class="find-a-table">
       <button>Find a table</button>
     </div>
-  </div>
-
+  </form>
 </div>

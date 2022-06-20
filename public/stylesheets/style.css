@@ -22,31 +22,6 @@
 .carousel-item img {
     height: 600px;
 }
- /* searchbar  
-#search-bar {
-    position:absolute;
-    width: 800px;
-    background-color: #fce2cf;
-    border-radius: 8px;
-    padding: 20px 30px;
-    border: 0;
-    background-color: cover;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-.form-control{
-    width:600px;
-}
-.col-lg-12 form{
-    margin: 0px auto;
-}
-.hotsearch{
-    margin-top: 10px;
-}
-
-.hotsearch a{
-    text-decoration: none;
-    color:#474747;
-} */
 
 .search{
     margin: 0px auto;
@@ -98,6 +73,9 @@
     display: flex;
     justify-content: center;
 }
+.card-info .title{
+    margin: 0px auto;
+}
 
 .card-img-top {
     height: 300px;
@@ -107,13 +85,30 @@
     height: 50px;
 }
 
-.card-title {
+ul .card-title {
     display: inline-block;
     text-decoration: none;
     margin-right: 20px;
 }
-
+.category ul{
+    margin:0px auto;
+}
+.category li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+.category li a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color:#e8714d;
+}
 /*  show page */
+.description a{
+    text-decoration: none;
+    color: #474747;
+}
 .row-lg-6 .map {
     width: 600px;
     height: 600px;
